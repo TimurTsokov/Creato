@@ -1,0 +1,77 @@
+@import '_normalize';
+
+$text-font: 'Raleway', sans-serif;
+$text-color: #fff;
+$text-col-hover: #ef4836;
+$cont: #212534;
+$bg-c: #292d3e;
+
+* {
+  box-sizing: border-box;
+  transition: all 0.4s ease-in-out;
+}
+
+html {
+  height: 100%;
+  font-size: 10px;
+}
+
+body {
+  font: 300 1.6rem/1.8 $text-font;
+  min-height: 100%;
+  color: $text-color;
+  background-color: #020407;
+}
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+  nav{
+    font-size: 0;
+    padding: 2rem 0;
+    &__logo{
+      width: 35px;
+      display: inline-block;
+      vertical-align: middle;
+      img{
+        width: 100%;
+      }
+    }
+    &__menu{
+      padding: 0;
+      width: calc(100% - 35px);
+      font-size: 1.4rem;
+      display: inline-block;
+      vertical-align: middle;
+      text-align: right;
+      font-weight: 600;
+      &--list{
+        display: inline-block;
+        padding: 10px;
+        a{
+          text-decoration: none;
+          display: inline-block;
+          padding: 10px 20px;
+          &:hover,
+          &:focus,
+          &:active{
+            color: $text-col-hover;
+          }
+        }
+        &.active a{
+          color: $text-col-hover;
+        }
+      }
+    }
+  }
+}
+
+.section{
+  height: 100vh;
+}
+
+
+
+
+
+
