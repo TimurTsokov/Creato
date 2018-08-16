@@ -57,6 +57,7 @@ header {
         display: inline-block;
         padding: 10px;
         a{
+          text-transform: uppercase;
           text-decoration: none;
           display: inline-block;
           padding: 0 20px;
@@ -74,7 +75,6 @@ header {
     }
   }
 }
-
 .section{
   height: 100vh;
   &-bg {
@@ -85,6 +85,27 @@ header {
     background-position: center;
     background-repeat: no-repeat;
   }
+}
+
+.content {
+  height: inherit;
+  display: flex;
+  padding-top: 315px;
+  justify-content: space-between;
+  align-items: flex-start;
+  &__img {
+    width: 470px;
+    height: 550px;
+    overflow: hidden;
+    position: relative;
+    img {
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, 0);
+    }
+  }
+
 }
 
 
