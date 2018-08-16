@@ -1,10 +1,11 @@
 @import '_normalize';
 
 $text-font: 'Raleway', sans-serif;
+
 $text-color: #fff;
 $text-col-hover: #ef4836;
-$cont: #212534;
-$bg-c: #292d3e;
+
+$bg-c: #020407;
 
 * {
   box-sizing: border-box;
@@ -20,13 +21,20 @@ body {
   font: 300 1.6rem/1.8 $text-font;
   min-height: 100%;
   color: $text-color;
-  background-color: #020407;
+  background-color: $bg-c;
 }
 
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
 .container {
   width: 1170px;
   margin: 0 auto;
-  nav{
+  .nav {
     font-size: 0;
     padding: 2rem 0;
     &__logo{
@@ -51,7 +59,8 @@ body {
         a{
           text-decoration: none;
           display: inline-block;
-          padding: 10px 20px;
+          padding: 0 20px;
+          color: #ffffff;
           &:hover,
           &:focus,
           &:active{
@@ -68,6 +77,14 @@ body {
 
 .section{
   height: 100vh;
+  &-bg {
+    display: block;
+    width: 100%;
+    background-image: linear-gradient(to top, #041121 0%, transparent 600%), url(../img/bg-i1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
 }
 
 
