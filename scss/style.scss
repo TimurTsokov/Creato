@@ -80,31 +80,46 @@ header {
 .section {
   height: 100vh;
   &-bg {
-    //display: block;
     width: 100%;
     background-image: linear-gradient(to top, #041121 0%, transparent 600%), url(../img/bg-i1.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    &--grad {
+      background-image: linear-gradient(#205eba 0%, transparent 200%), url(../img/overley-img.png);
+      margin-top: 150px;
+    }
   }
 }
 
 .content {
   display: flex;
   padding-top: 315px;
+  &--position {
+    padding-top: 0;
+    align-items: flex-end;
+  }
   &__img {
     width: 50%;
     height: 550px;
     overflow: hidden;
     position: relative;
     background-color: #fff;
+    &--top {
+      top: -150px;
+    }
     &-here,
     &-video {
       position: absolute;
       top: 0;
       left: 50%;
       transform: translate(-50%, 0);
+      &--pos {
+        left: 35%;
+        transform: translate(-35%, 0);
+      }
     }
+
     &-video {
       top: 230px;
     }
