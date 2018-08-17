@@ -31,21 +31,22 @@ header {
   right: 0;
   z-index: 10;
 }
+
 .container {
   width: 1170px;
   margin: 0 auto;
   .nav {
     font-size: 0;
     padding: 2rem 0;
-    &__logo{
+    &__logo {
       width: 35px;
       display: inline-block;
       vertical-align: middle;
-      img{
+      img {
         width: 100%;
       }
     }
-    &__menu{
+    &__menu {
       padding: 0;
       width: calc(100% - 35px);
       font-size: 1.4rem;
@@ -53,10 +54,10 @@ header {
       vertical-align: middle;
       text-align: right;
       font-weight: 600;
-      &--list{
+      &--list {
         display: inline-block;
         padding: 10px;
-        a{
+        a {
           text-transform: uppercase;
           text-decoration: none;
           display: inline-block;
@@ -64,21 +65,22 @@ header {
           color: #ffffff;
           &:hover,
           &:focus,
-          &:active{
+          &:active {
             color: $text-col-hover;
           }
         }
-        &.active a{
+        &.active a {
           color: $text-col-hover;
         }
       }
     }
   }
 }
-.section{
+
+.section {
   height: 100vh;
   &-bg {
-    display: block;
+    //display: block;
     width: 100%;
     background-image: linear-gradient(to top, #041121 0%, transparent 600%), url(../img/bg-i1.jpg);
     background-size: cover;
@@ -88,21 +90,64 @@ header {
 }
 
 .content {
-  height: inherit;
   display: flex;
   padding-top: 315px;
-  justify-content: space-between;
-  align-items: flex-start;
   &__img {
-    width: 470px;
+    width: 50%;
     height: 550px;
     overflow: hidden;
     position: relative;
-    img {
+    background-color: #fff;
+    &-here,
+    &-video {
       position: absolute;
       top: 0;
       left: 50%;
       transform: translate(-50%, 0);
+    }
+    &-video {
+      top: 230px;
+    }
+  }
+  &__text {
+    width: 50%;
+    margin-left: 100px;
+    position: relative;
+    &:before {
+      content: '';
+      width: 90px;
+      height: 1px;
+      position: absolute;
+      background: #ffffff;
+      left: -130px;
+      top: 20px;
+    }
+    h1 {
+      margin-top: -15px;
+      margin-bottom: 40px;
+      line-height: 1.3;
+      text-transform: uppercase;
+      font-weight: 300;
+      font-size: 4.8rem;
+    }
+    p {
+      font-weight: 200;
+    }
+    a {
+      text-decoration: none;
+      color: $text-color;
+      font-weight: 700;
+      font-size: 1.8rem;
+      position: relative;
+      &:after {
+        content: url("../img/arrow_r.svg");
+        position: absolute;
+        left: 150px;
+      }
+      &:hover,
+      &:focus {
+        color: $text-col-hover;
+      }
     }
   }
 
