@@ -1,7 +1,7 @@
 'use strict';
 	$(document).ready(function () {
-        var isotope = $('.container--images').isotope({ // для фильтрации картинок по типу data-filter
-            itemSelector: '.container--images-image',
+        var isotope = $('.images').isotope({ // для фильтрации картинок по типу data-filter
+            itemSelector: '.images-image',
             percentPosition: true,
             // layoutMode: 'masonry'
             masonry: {
@@ -9,8 +9,8 @@
                 gutter: '.gutter-sizer'
             }
         });
-        $('.container--switchers a').on('click', function (e) {
-            $('.container--switchers li').removeClass('active');
+        $('.switchers a').on('click', function (e) {
+            $('.switchers li').removeClass('active');
             $(this).parent().addClass('active');
             e.preventDefault();
             var filter = $(this).attr('data-filter');
@@ -19,8 +19,8 @@
                 filter: filter
             })
         });
-        $('.container__nav-menu a').on('click', function (e) {
-            $('.container__nav-menu li').removeClass('active');
+        $('.nav__menu a').on('click', function (e) {
+            $('.nav__menu li').removeClass('active');
             $(this).parent().addClass('active');
             e.preventDefault();
         });

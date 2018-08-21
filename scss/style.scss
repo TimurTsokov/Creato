@@ -2,11 +2,23 @@
 
 @font-face {
   font-family: 'et-line';
+  src: url("../node_modules/et-line/fonts/et-line.eot");
   src: url("../node_modules/et-line/fonts/et-line.svg") format("svg"),
-  url("../node_modules/et-line/fonts/et-line.eot") format("eot"), url("../node_modules/et-line/fonts/et-line.ttf") format("ttf"), url("../node_modules/et-line/fonts/et-line.woff") format("woff");
+  url("../node_modules/et-line/fonts/et-line.ttf") format("truetype"), url("../node_modules/et-line/fonts/et-line.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
+
+//@font-face {
+//  font-family: 'et-line';
+//  src:url('fonts/et-line.eot');
+//  src:url('fonts/et-line.eot?#iefix') format('embedded-opentype'),
+//  url('fonts/et-line.woff') format('woff'),
+//  url('fonts/et-line.ttf') format('truetype'),
+//  url('fonts/et-line.svg#et-line') format('svg');
+//  font-weight: normal;
+//  font-style: normal;
+//}
 $text-font: 'Raleway', sans-serif;
 
 $text-color: #fff;
@@ -94,6 +106,30 @@ header {
     background-position: center;
     background-repeat: no-repeat;
   }
+  .switchers {
+    list-style-type: none;
+    padding: 0;
+    text-align: right;
+    //margin-top: 50px;
+    li {
+      display: inline-block;
+      a {
+        color: #595959;
+        font-size: 1.4rem;
+        text-decoration: none;
+        padding: 0 20px;
+        font-weight: 500;
+        &:hover,
+        &:focus,
+        &:active {
+          color: #ffffff;
+        }
+      }
+      &.active a {
+        color: #ffffff;
+      }
+    }
+  }
 }
 
 .section {
@@ -175,8 +211,8 @@ header {
     font-weight: 300;
     position: relative;
     &:before {
-      content: "&#xe012;";
-      //display: block;
+      //content: "&#xe012;";
+      display: block;
       position: absolute;
       left: 0;
       top: 0;
@@ -209,6 +245,25 @@ header {
   }
 }
 
+.images {
+  font-size: 0;
+  width: 100%;
+  //margin-top: 20px;
+  .image-sizer {
+    width: 1%;
+  }
+  .gutter-sizer {
+    width: 1%;
+  }
+  &-image {
+    width: auto;
+    overflow: hidden;
+    margin: 5px 5px;
+    img {
+      width: 100%;
+    }
+  }
+}
 
 
 
