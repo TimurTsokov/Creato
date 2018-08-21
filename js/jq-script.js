@@ -7,6 +7,7 @@
             masonry: {
                 columnWidth: '.image-sizer',
                 gutter: '.gutter-sizer'
+                // fitWidth: true
             }
         });
         $('.switchers a').on('click', function (e) {
