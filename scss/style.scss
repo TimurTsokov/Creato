@@ -4,7 +4,8 @@
   font-family: 'et-line';
   src: url("../node_modules/et-line/fonts/et-line.eot");
   src: url("../node_modules/et-line/fonts/et-line.svg") format("svg"),
-  url("../node_modules/et-line/fonts/et-line.ttf") format("truetype"), url("../node_modules/et-line/fonts/et-line.woff") format("woff");
+  url("../node_modules/et-line/fonts/et-line.ttf") format("truetype"),
+  url("../node_modules/et-line/fonts/et-line.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -133,7 +134,7 @@ header {
 }
 
 .section {
-  height: 100vh;
+  //height: 100vh;
   &-bg {
     width: 100%;
     background: linear-gradient(to top, #020407 0%, #041121 50%, transparent 600%), url(../img/bg-i1.jpg);
@@ -211,7 +212,8 @@ header {
     font-weight: 300;
     position: relative;
     &:before {
-      //content: "&#xe012;";
+      font-family: et-line;
+      content: attr(data-icon);
       display: block;
       position: absolute;
       left: 0;
@@ -256,7 +258,7 @@ header {
     width: 1%;
   }
   &-image {
-    width: auto;
+    width: 30%;
     overflow: hidden;
     margin: 5px 5px;
     img {
