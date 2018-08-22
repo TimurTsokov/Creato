@@ -10,6 +10,17 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'ElegantIcons';
+  src: url('../node_modules/elegant-icons/fonts/ElegantIcons.eot');
+  src: url('../node_modules/elegant-icons/fonts/ElegantIcons.eot?#iefix') format('embedded-opentype'),
+  url('../node_modules/elegant-icons/fonts/ElegantIcons.woff') format('woff'),
+  url('../node_modules/elegant-icons/fonts/ElegantIcons.ttf') format('truetype'),
+  url('../node_modules/elegant-icons/fonts/ElegantIcons.svg#ElegantIcons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
 //@font-face {
 //  font-family: 'et-line';
 //  src:url('fonts/et-line.eot');
@@ -211,6 +222,7 @@ header {
     font-size: 2.4rem;
     font-weight: 300;
     position: relative;
+    padding-left: 60px;
     &:before {
       font-family: et-line;
       content: attr(data-icon);
@@ -234,12 +246,14 @@ header {
   font-size: 1.8rem;
   position: relative;
   &:after {
-    content: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="9px">
-    <text font-family="ElegantIcons" fill="rgb(255, 255, 255)" font-size="18px" x="0px" y="7.24400000000003px">
-        &#36;</text>
-</svg>');
+    //    content: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="9px">
+    //    <text font-family="ElegantIcons" fill="rgb(255, 255, 255)" font-size="18px" x="0px" y="7.24400000000003px">
+    //        &#36;</text>
+    //</svg>');
+    font-family: 'ElegantIcons';
+    content: attr(data-icon);
     position: absolute;
-    left: 150px;
+    left: 130px;
   }
   &:hover,
   &:focus {
@@ -249,18 +263,21 @@ header {
 
 .images {
   font-size: 0;
-  width: 100%;
+  width: 101%;
   //margin-top: 20px;
   .image-sizer {
-    width: 1%;
+    width: 0.5%;
   }
   .gutter-sizer {
-    width: 1%;
+    width: 0.5%;
   }
   &-image {
-    width: 30%;
+    width: 32%;
     overflow: hidden;
     margin: 5px 5px;
+    &--width2 {
+      width: 33%;
+    }
     img {
       width: 100%;
     }
