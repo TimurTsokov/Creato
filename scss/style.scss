@@ -172,15 +172,14 @@ header {
   &--top {
     padding-top: 100px;
   }
-  &__bg {
+  &__contact {
     width: 40%;
     overflow: hidden;
     background-image: linear-gradient(#205eba 0%, transparent 900%), url(../img/photo-woman.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    &-contact {
-      padding: 70px;
+    padding: 70px;
       h2 {
         line-height: 1;
         margin: 0 0 20px 0;
@@ -194,12 +193,35 @@ header {
           margin-bottom: 40px;
         }
       }
-
-    }
   }
   &__mail {
     width: 60%;
     background-color: #131313;
+    padding: 55px;
+    h2 {
+      line-height: 1;
+      font-size: 3rem;
+      font-weight: 300;
+      margin: 0;
+      position: relative;
+      &:before {
+        content: '';
+        width: 90px;
+        height: 1px;
+        position: absolute;
+        background: #ffffff;
+        left: -120px;
+        top: 15px;
+      }
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      width: 400px;
+      input, textarea {
+        background-color: transparent;
+      }
+    }
   }
   &__img {
     width: 50%;
