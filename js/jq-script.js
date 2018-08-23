@@ -25,10 +25,12 @@
             $(this).parent().addClass('active');
             e.preventDefault();
         });
-        $('#slider').slick({ //слайдер
-            autoplay: true,
-            arrows: false,
-            infinite: true
-        });
+        // $('#slider').slick({ //слайдер
+        //     arrows: true,
+        //     dots: false,
+        //     infinite: false,
+        //     fade: true,
+        //     easing: 'ease-in'
+        // });
 
 	});

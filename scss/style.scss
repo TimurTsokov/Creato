@@ -122,6 +122,7 @@ header {
     //background-color: #ef4836;
     background: rgba(239, 72, 54, 0.9);
     margin-top: 300px;
+    margin-bottom: 160px;
   }
   .switchers {
     list-style-type: none;
@@ -163,10 +164,42 @@ header {
 .content {
   display: flex;
   padding-top: 315px;
-  position: relative;
+  //position: relative;
   &--position {
     padding-top: 0;
     align-items: center;
+  }
+  &--top {
+    padding-top: 100px;
+  }
+  &__bg {
+    width: 40%;
+    overflow: hidden;
+    background-image: linear-gradient(#205eba 0%, transparent 900%), url(../img/photo-woman.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    &-contact {
+      padding: 70px;
+      h2 {
+        line-height: 1;
+        margin: 0 0 20px 0;
+        font-size: 2rem;
+        font-weight: 700;
+      }
+      span {
+        display: block;
+        font-size: 1.4rem;
+        &:not(:last-of-type) {
+          margin-bottom: 40px;
+        }
+      }
+
+    }
+  }
+  &__mail {
+    width: 60%;
+    background-color: #131313;
   }
   &__img {
     width: 50%;
@@ -184,7 +217,7 @@ header {
       margin-left: 85px;
     }
     &-here,
-    &-video {
+    &-play {
       position: absolute;
       top: 0;
       left: 50%;
@@ -200,7 +233,7 @@ header {
       }
     }
 
-    &-video {
+    &-play {
       top: 230px;
     }
   }
@@ -217,22 +250,25 @@ header {
       left: -100px;
       top: 20px;
     }
-    &--before {
+    &--style {
       font-weight: 300;
       font-style: italic;
       position: relative;
-      margin-left: 55%;
+      margin-left: 52%;
       padding: 100px 0;
       &:after {
         content: '"';
         position: absolute;
         left: -50px;
-        bottom: -5px;
+        top: 15px;;
         font-weight: 900;
         font-size: 15rem;
         color: #da3e2d;
         z-index: -1;
-
+      }
+      &:before {
+        left: -120px;
+        top: 110px;
       }
     }
     h1 {
@@ -314,6 +350,20 @@ header {
   }
 }
 
+.logs {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  &__list {
+    display: inline-block;
+    img {
+      opacity: .3;
+    }
+
+  }
+}
 
 
 
