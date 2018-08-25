@@ -35,6 +35,7 @@ $text-font: 'Raleway', sans-serif;
 
 $text-color: #fff;
 $text-col-hover: #ef4836;
+$text-icon-hover: #205eba;
 
 $bg-c: #020407;
 
@@ -203,6 +204,7 @@ header {
       font-size: 3rem;
       font-weight: 300;
       margin: 0;
+      margin-bottom: 30px;
       position: relative;
       &:before {
         content: '';
@@ -220,6 +222,25 @@ header {
       width: 400px;
       input, textarea {
         background-color: transparent;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid #2b2b2b;
+        padding: 15px;
+        resize: none;
+        &:hover::placeholder,
+        &:hover,
+        &:focus::placeholder,
+        &:focus,
+        &:active {
+          color: #205eba;
+          border-color: #205eba;
+        }
+      }
+      .submit {
+        margin-top: 35px;
+        &:after {
+          left: 120px;
+        }
       }
     }
   }
@@ -351,7 +372,7 @@ header {
 
 .images {
   font-size: 0;
-  width: 101%;
+  width: 100%;
   //margin-top: 20px;
   .image-sizer {
     width: 0.5%;
@@ -384,6 +405,58 @@ header {
       opacity: .3;
     }
 
+  }
+}
+
+.footer {
+  font-size: 0;
+  padding: 2rem 0;
+  &__logo {
+    width: 60px;
+    display: inline-block;
+    vertical-align: middle;
+    img {
+      width: 100%;
+    }
+  }
+  span {
+    margin-left: 15px;
+    font-size: 1.4rem;
+    font-weight: 200;
+    color: #565656;
+    vertical-align: middle;
+  }
+  &__icons {
+    padding: 0;
+    width: calc(100% - 300px);
+    font-size: 1.4rem;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: right;
+    font-weight: 600;
+    &--list {
+      display: inline-block;
+      padding: 10px;
+      a {
+        text-transform: uppercase;
+        text-decoration: none;
+        display: inline-block;
+        padding-right: 5px;
+        color: #ffffff;
+        &:hover,
+        &:focus,
+        &:active {
+          color: $text-icon-hover;
+        }
+      }
+      &.active a {
+        color: $text-icon-hover;
+      }
+    }
+    [data-icon]:before {
+      font-family: 'ElegantIcons';
+      content: attr(data-icon);
+    }
   }
 }
 

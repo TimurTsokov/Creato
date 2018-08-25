@@ -25,6 +25,18 @@
             $(this).parent().addClass('active');
             e.preventDefault();
         });
+        $('.footer__icons a').on('click', function (e) {
+            $('.footer__icons--list').removeClass('active');
+            $(this).parent().addClass('active');
+            e.preventDefault();
+        });
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > '850') {
+                $('header').css({"background-color": "rgba(89, 89, 89, 0.6)"});
+            } else if ($(window).scrollTop() < '850') {
+                $('header').css({"background-color": "transparent"});
+            }
+        });
         // $('#slider').slick({ //слайдер
         //     arrows: true,
         //     dots: false,
