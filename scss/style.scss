@@ -68,6 +68,9 @@ header {
 .container {
   width: 1170px;
   margin: 0 auto;
+  @media screen and(max-width: 1185px) {
+    width: 94%;
+  }
   &--flex {
     display: flex;
     padding: 170px 0;
@@ -182,19 +185,19 @@ header {
     background-position: center;
     background-repeat: no-repeat;
     padding: 70px;
-      h2 {
-        line-height: 1;
-        margin: 0 0 20px 0;
-        font-size: 2rem;
-        font-weight: 700;
+    h2 {
+      line-height: 1;
+      margin: 0 0 20px 0;
+      font-size: 2rem;
+      font-weight: 700;
+    }
+    span {
+      display: block;
+      font-size: 1.4rem;
+      &:not(:last-of-type) {
+        margin-bottom: 40px;
       }
-      span {
-        display: block;
-        font-size: 1.4rem;
-        &:not(:last-of-type) {
-          margin-bottom: 40px;
-        }
-      }
+    }
   }
   &__mail {
     width: 60%;
@@ -300,6 +303,15 @@ header {
       position: relative;
       margin-left: 52%;
       padding: 100px 0;
+      @media screen and(max-width: 1185px) {
+        margin-left: 60%;
+      }
+      @media screen and(max-width: 1024px) {
+        margin-left: 70%;
+      }
+      @media screen and(max-width: 992px) {
+        margin-left: 80%;
+      }
       &:after {
         content: '"';
         position: absolute;
@@ -326,6 +338,10 @@ header {
     p {
       font-weight: 200;
       margin: 0 0 40px 0;
+      @media screen and(max-width: 992px) {
+        height: 200px;
+        overflow: hidden;
+      }
     }
   }
 }
@@ -374,6 +390,9 @@ header {
 .images {
   font-size: 0;
   width: 100%;
+  @media screen and(max-width: 1024px) {
+    margin: 0 15%;
+  }
   //margin-top: 20px;
   .image-sizer {
     width: 0.5%;
