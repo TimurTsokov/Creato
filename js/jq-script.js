@@ -33,8 +33,10 @@
         $(window).scroll(function () {
             if ($(window).scrollTop() > '850') {
                 $('header').css({"background-color": "rgba(89, 89, 89, 0.6)"});
+                $('.nav').css({"padding": "0"});
             } else if ($(window).scrollTop() < '850') {
                 $('header').css({"background-color": "transparent"});
+                $('.nav').css({"padding": "2rem 0"});
             }
         });
         // $('#slider').slick({ //слайдер
