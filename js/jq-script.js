@@ -39,12 +39,21 @@
                 $('.nav').css({"padding": "2rem 0"});
             }
         });
-        // $('#slider').slick({ //слайдер
-        //     arrows: true,
-        //     dots: false,
-        //     infinite: false,
-        //     fade: true,
-        //     easing: 'ease-in'
-        // });
+        $('.slider').slick({ //слайдер
+            arrows: true,
+            dots: false,
+            infinite: true,
+            // fade: true,
+            easing: 'ease-in'
+        });
+        $('.menu-toggler').on('click', function (e) {
+            e.preventDefault();
+            $('body').toggleClass('menu-open');
+        });
+        $('a[href*="#"]').not('[href="#"]').not('[href="#0"]')
+            .on('click', function (e) {
+                e.preventDefault();
+                $('body').removeClass('menu-open');
+            })
 
 	});
