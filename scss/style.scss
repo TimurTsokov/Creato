@@ -266,9 +266,10 @@ header {
     background-repeat: no-repeat;
     padding: 70px;
     @media screen and(max-width: 576px) {
+      width: 100%;
       background-image: none;
       background-color: #205eba;
-      padding: 70px 0;
+      //padding: 70px 0;
     }
     h2 {
       line-height: 1;
@@ -288,6 +289,9 @@ header {
     width: 60%;
     background-color: #131313;
     padding: 55px;
+    @media screen and(max-width: 576px) {
+      width: 100%;
+    }
     h2 {
       line-height: 1;
       font-size: 3rem;
@@ -443,7 +447,7 @@ header {
       font-weight: 200;
       margin: 0 0 40px 0;
       @media screen and(max-width: 992px) {
-        height: 200px;
+        height: 140px;
         overflow: hidden;
       }
     }
@@ -451,8 +455,14 @@ header {
 }
 
 @media screen and(max-width: 576px) {
-  .content__img {
-    display: none;
+  //.content__img {
+  //  display: none;
+  //}
+  .content {
+    flex-direction: column;
+    &__img {
+      width: 100%;
+    }
   }
   .content__text {
     width: 90%;

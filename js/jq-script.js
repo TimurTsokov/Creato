@@ -10,6 +10,10 @@
                 // fitWidth: true
             }
         });
+        $('a[href="#"]').on('click', function (e) {
+            e.preventDefault();
+        });
+
         $('.switchers a').on('click', function (e) {
             $('.switchers li').removeClass('active');
             $(this).parent().addClass('active');
