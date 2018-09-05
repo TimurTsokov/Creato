@@ -155,7 +155,7 @@ header {
   }
   &-bg2 {
     //background-color: #ef4836;
-    background: rgba(239, 72, 54, 0.9);
+
     margin-top: 300px;
     margin-bottom: 160px;
   }
@@ -246,11 +246,13 @@ header {
 
 .content {
   display: flex;
-  padding-top: 315px;
+  padding-top: 30vh;
   //position: relative;
   &--position {
     padding-top: 0;
     align-items: center;
+    background: rgba(239, 72, 54, 0.9);
+    margin: 10vh 0;
   }
   &--top {
     padding-top: 100px;
@@ -337,7 +339,7 @@ header {
   }
   &__img {
     width: 50%;
-    //height: 550px;
+    height: 80vh;
     overflow: hidden;
     position: relative;
     background-color: #fff;
@@ -353,6 +355,8 @@ header {
       position: absolute;
       width: 470px;
       margin-left: 85px;
+      top: 10px;
+      height: auto;
       @media screen and(max-width: 768px) {
         //width: 50%;
         margin-left: 0;
@@ -371,7 +375,12 @@ header {
       &--pos2 {
         //width: 50%;
         left: 30%;
+        //top: 10vh;
+        //bottom: 10vh;
+
+        //height: 70vh;
         transform: translate(-30%, 0);
+
       }
     }
 
