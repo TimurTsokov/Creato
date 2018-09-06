@@ -3,35 +3,25 @@
 
 @font-face {
   font-family: 'et-line';
-  src: url("../node_modules/et-line/fonts/et-line.eot");
-  src: url("../node_modules/et-line/fonts/et-line.svg") format("svg"),
-  url("../node_modules/et-line/fonts/et-line.ttf") format("truetype"),
-  url("../node_modules/et-line/fonts/et-line.woff") format("woff");
+  src: url("../fonts/et-line/fonts/et-line.eot");
+  src: url("../fonts/et-line/fonts/et-line.svg") format("svg"),
+  url("../fonts/et-line/fonts/et-line.ttf") format("truetype"),
+  url("../fonts/et-line/fonts/et-line.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'ElegantIcons';
-  src: url('../node_modules/elegant-icons/fonts/ElegantIcons.eot');
-  src: url('../node_modules/elegant-icons/fonts/ElegantIcons.eot?#iefix') format('embedded-opentype'),
-  url('../node_modules/elegant-icons/fonts/ElegantIcons.woff') format('woff'),
-  url('../node_modules/elegant-icons/fonts/ElegantIcons.ttf') format('truetype'),
-  url('../node_modules/elegant-icons/fonts/ElegantIcons.svg#ElegantIcons') format('svg');
+  src: url('../fonts/elegant-icons/fonts/ElegantIcons.eot');
+  src: url('../fonts/elegant-icons/fonts/ElegantIcons.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/elegant-icons/fonts/ElegantIcons.woff') format('woff'),
+  url('../fonts/elegant-icons/fonts/ElegantIcons.ttf') format('truetype'),
+  url('../fonts/elegant-icons/fonts/ElegantIcons.svg#ElegantIcons') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 
-//@font-face {
-//  font-family: 'et-line';
-//  src:url('fonts/et-line.eot');
-//  src:url('fonts/et-line.eot?#iefix') format('embedded-opentype'),
-//  url('fonts/et-line.woff') format('woff'),
-//  url('fonts/et-line.ttf') format('truetype'),
-//  url('fonts/et-line.svg#et-line') format('svg');
-//  font-weight: normal;
-//  font-style: normal;
-//}
 $text-font: 'Raleway', sans-serif;
 
 $text-color: #fff;
